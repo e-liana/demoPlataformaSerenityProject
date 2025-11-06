@@ -3,7 +3,7 @@ package com.example.steps;
 import io.cucumber.java.en.*;
 
 
-public class recuperacionContraseñaSteps {
+public class recuperacion_ContraseñaSteps {
 
     @Given("el usuario está en la página de inicio de sesión")
     public void usuarioEnLogin() {
@@ -13,6 +13,7 @@ public class recuperacionContraseñaSteps {
     @When("hace clic en Persona Natural")
     public void seleccionPersonaNatural() {
         System.out.println("entro al When ");// Entro al when -caso de uso de persona natural
+    }
 
     @And("hace clic en ¿Olvidaste tu contraseña?")
     public void seleccionOlvidoContraseña() {
@@ -21,6 +22,7 @@ public class recuperacionContraseñaSteps {
 
     @Then("se muestra el flujo de recuperación de contraseña para persona jurídica")
     public void recibeInstruccionesRestablecerContraseñaNatural() {
-        System.out.println("entro al Then "); // Verificar acceso
+        System.out.println("entro al Then"); // Verificar acceso
     }
+
 }
