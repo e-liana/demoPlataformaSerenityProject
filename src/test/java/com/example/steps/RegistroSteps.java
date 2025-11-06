@@ -6,16 +6,16 @@ public class RegistroSteps {
 
     @Given("el usuario está en la página de registro")
     public void usuarioEnRegistro() {
-        // Navegar a registro.html
+        System.out.println("entro al Given");// Navegar a registro.html
     }
 
     @When("selecciona tipo de persona natural y completa el formulario")
     public void completarFormularioRegistro() {
-        // Completar formulario
+        System.out.println("entro al When");// Completar formulario
     }
 
     @Then("el sistema crea la cuenta exitosamente")
     public void cuentaCreada() {
-        // Verificar creación de cuenta
+        System.out.println("entro al Then");// Verificar creación de cuenta
     }
 }

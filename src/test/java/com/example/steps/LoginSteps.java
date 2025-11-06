@@ -2,20 +2,23 @@ package com.example.steps;
 
 import io.cucumber.java.en.*;
 
-public class LoginSteps {
+public class loginSteps {
 
     @Given("el usuario está en la página de inicio de sesión")
     public void usuarioEnLogin() {
-        // Navegar a index.html
+        System.out.println("entro al Given");// Navegar a index.html
     }
+
+
+    // validar si es necesario agregar la seleccion de persona natural y juridica antes del ingreso de credenciales
 
     @When("ingresa usuario y contraseña válidos")
     public void ingresarCredenciales() {
-        // Ingresar datos en el formulario
+        System.out.println("entro al When ");// Ingresar datos en el formulario
     }
 
     @Then("accede correctamente a la plataforma")
     public void accesoExitoso() {
-        // Verificar acceso
+        System.out.println("entro al Then "); // Verificar acceso
     }
 }

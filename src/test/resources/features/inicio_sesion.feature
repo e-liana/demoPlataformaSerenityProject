@@ -1,3 +1,4 @@
+  // el feature debe mejroar el nombre para mayor claridad
 Feature: Navegación desde inicio de sesión a registro
 
 Scenario: Usuario accede a la pantalla de registro desde la pantalla de inicio de sesión
@@ -5,7 +6,7 @@ Scenario: Usuario accede a la pantalla de registro desde la pantalla de inicio d
   When hace clic en el botón "Regístrate"
   Then se muestra la pantalla de bienvenida con gráficos, botón cancelar, selector de tipo de persona y botón para regresar
 
-
+  // considerar mapeo para considerarlo un escenario aparte
 
 Feature: Acceso al portal institucional Davivienda
 
