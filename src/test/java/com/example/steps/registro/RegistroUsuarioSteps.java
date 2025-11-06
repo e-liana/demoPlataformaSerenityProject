@@ -1,7 +1,6 @@
-package com.example.steps;
+package com.example.steps.registro;
 
 import io.cucumber.java.en.*;
-import static org.junit.Assert.*;
 
 public class RegistroUsuarioSteps {
 

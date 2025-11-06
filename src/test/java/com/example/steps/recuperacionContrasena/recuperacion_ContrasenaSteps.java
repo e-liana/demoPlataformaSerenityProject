@@ -1,9 +1,9 @@
-package com.example.steps;
+package com.example.steps.recuperacionContrasena;
 
 import io.cucumber.java.en.*;
 
 
-public class recuperacion_ContraseñaSteps {
+public class recuperacion_ContrasenaSteps {
 
     @Given("el usuario está en la página de inicio de sesión")
     public void usuarioEnLogin() {
