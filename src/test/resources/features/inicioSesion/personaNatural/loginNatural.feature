@@ -1,9 +1,10 @@
-# Created by LisethElianaOsorioRe at 6/11/2025
-Feature: Inicio de sesión - Persona jurídica
+Feature: Inicio de sesión - Persona Natural
 
-  Scenario: Usuario inicia sesión como persona jurídica con credenciales válidas
+  Scenario: Usuario inicia sesión como persona natural con credenciales válidas
     Given el usuario está en la página de inicio de sesión
-    And selecciona "Persona jurídica"
-    When ingresa NIT "123456789-0", correo "empresa@example.com" y contraseña "EmpresaPass123"
-    And hace clic en "Ingresar"
+    And selecciona "Persona natural"
+    When ingresa correo "user@example.com" y contraseña "MiPass123"
+    And juridica hace clic en "Ingresar"
     Then accede correctamente a la plataforma
+
+    #$ revisar ppsibilidad de un inicio de sesion general en el que se escoja el tipo de persona para evitar duplicidad de codigo y facilitar mantenimiento

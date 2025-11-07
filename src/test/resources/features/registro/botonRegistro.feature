@@ -1,10 +1,10 @@
 # Created by LisethElianaOsorioRe at 6/11/2025
-Feature: # Enter feature name here
+#Feature: # Enter feature name here
   # Enter feature description here
 
-  Scenario: # Enter scenario name here
+ # Scenario: # Enter scenario name here
     # Enter steps here
-
+# este caso no se esta usando
 
 Feature: Registro de usuario unificado (Persona Natural y Persona Jurídica)
 
@@ -63,7 +63,7 @@ Feature: Registro de usuario unificado (Persona Natural y Persona Jurídica)
   # Paso 2: Verificación (OTP)
   Scenario: Verificación exitosa del código OTP
     Given el usuario está en el paso "Verificación"
-    And el sistema ha enviado un código de 6 dígitos al correo
+    And el sistema ha enviado un código de 6 dígitos al numero de celular registrado
     When ingresa el código válido dentro del tiempo permitido
     And hace clic en "Validar"
     Then el sistema confirma la verificación

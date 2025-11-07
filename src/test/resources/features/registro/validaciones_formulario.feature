@@ -16,16 +16,3 @@ Examples:
   | Juan    | Perez     | 3225001122        | usuario.com         | Aa1234567. | Medellín | Aa1234567.           | 3   | 45              | 2               | 456                 | Tarjeta Identidad | Carrera     |
   | Maria   | Niño      | 3115446688        | usuario@dominio.com | 12345678   | Medellín | 12345678             | 4   | 13              | 75              | 789                 | Pasaporte         | Avenida     |
 
-
-
-Feature: Validación de contraseña segura
-
-Scenario: Usuario ingresa contraseña que cumple con los requisitos
-  Given el usuario está en el campo de contraseña
-  When ingresa "Aa1234567."
-  Then el sistema acepta la contraseña como válida
-
-Scenario: Usuario ingresa contraseña sin carácter especial
-  Given el usuario está en el campo de contraseña
-  When ingresa "Aa12345678"
-  Then el sistema muestra error indicando falta de carácter especial

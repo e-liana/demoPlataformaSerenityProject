@@ -2,12 +2,12 @@
 Feature: Selección de tipo de persona en el registro
   # Enter feature description here
 
-  Scenario: Selección de tipo de persona
+  Scenario Outline: Selección de tipo de persona
     Given el usuario está en la pantalla de bienvenida
     When selecciona "<tipoPersona>"
     Then se muestra el formulario correspondiente para <tipoPersona>
 
     Examples:
-      | tipoPersona       |
-      | Persona Natural   |
-      | Persona Jurídica  |
+      | tipoPersona      |
+      | Persona Natural  |
+      | Persona Jurídica |

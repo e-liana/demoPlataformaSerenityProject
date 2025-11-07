@@ -8,7 +8,7 @@ public class cancelarRegistroSteps {
 
     @Given("el usuario está en la pantalla de bienvenida")
     public void usuarioEnPantallaBienvenida() {
-        System.out.println("entro al Given");//
+        System.out.println("entro al Given");//  pantalla de bienvenida en el proceso de registro
     } @When("hace clic en el botón Cancelar")
     public void clicEnBotonCancelar() {
         System.out.println("entro al When");//

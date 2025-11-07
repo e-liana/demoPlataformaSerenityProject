@@ -1,14 +1,17 @@
 // java
 package com.example.steps.inicioSesion.personaNatural;
 
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class loginNaturalSteps {
 
-    @Given("el usuario está en la página de inicio de sesión")
-    public void usuarioEnPaginaInicioSesion() {
+    @Given("el usuario Natural está en la página de inicio de sesión")
+    public void usuarioNaturalEnPaginaInicioSesion() {
         // TODO: navegar a la URL de login (usar WebDriver o PageObject)
-        System.out.println("Given: el usuario está en la página de inicio de sesión");
+        System.out.println("Given: el usuario Natural está en la página de inicio de sesión");
     }
 
     @And("selecciona {string}")
@@ -23,8 +26,8 @@ public class loginNaturalSteps {
         System.out.println("When: ingresa correo=" + correo + " contraseña=" + contrasena);
     }
 
-    @And("hace clic en {string}")
-    public void haceClicEn(String boton) {
+    @And("natural hace clic en {string}")
+    public void haceClicEnNatural(String boton) {
         // TODO: simular clic en el botón (p. ej. "Ingresar")
         System.out.println("And: hace clic en -> " + boton);
     }
@@ -34,4 +37,5 @@ public class loginNaturalSteps {
         // TODO: validar que el usuario fue autenticado y redirigido (dashboard, token, etc.)
         System.out.println("Then: accede correctamente a la plataforma");
     }
+
 }

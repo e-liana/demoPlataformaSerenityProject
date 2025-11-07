@@ -1,36 +1,39 @@
+// java
 package com.example.steps.inicioSesion.personaJuridica;
 
 import io.cucumber.java.en.*;
 
 public class loginJuridicaSteps {
 
-    @Given("el usuario está en la página de inicio de sesión")
-    public void usuarioEnPaginaInicioSesion() {
-        System.out.println("Given: el usuario está en la página de inicio de sesión");
-        // TODO: navegar a la URL de login
+    @Given("el usuario Juridica está en la página de inicio de sesión")
+    public void usuarioNaturalEnPaginaInicioSesion() {
+        // TODO: navegar a la URL de login (usar WebDriver o PageObject)
+        System.out.println("Given: el usuario Natural está en la página de inicio de sesión");
     }
 
     @And("selecciona {string}")
     public void seleccionaTipoUsuario(String tipo) {
+        // TODO: seleccionar la opción "Persona Juridica" en la UI
         System.out.println("And: selecciona -> " + tipo);
-        // TODO: seleccionar la opción "Persona jurídica"
     }
 
-    @When("ingresa NIT {string}, correo {string} y contraseña {string}")
-    public void ingresaNitCorreoContrasena(String nit, String correo, String contrasena) {
-        System.out.println("When: ingresa NIT=" + nit + " correo=" + correo);
-        // TODO: usar PageObject para ingresar NIT, correo y contraseña
+    @When("ingresa correo {string} y contraseña {string}")
+    public void ingresaCorreoYContrasena(String correo, String contrasena) {
+        // TODO: usar PageObject para completar correo y contraseña
+        System.out.println("When: ingresa correo=" + correo + " contraseña=" + contrasena);
     }
 
-    @And("hace clic en {string}")
-    public void haceClicEn(String boton) {
+    @And("Juridica hace clic en {string}")
+    public void haceClicEnJuridica(String boton) {
+        // TODO: simular clic en el botón (p. ej. "Ingresar")
         System.out.println("And: hace clic en -> " + boton);
-        // TODO: simular clic en botón "Ingresar"
     }
 
     @Then("accede correctamente a la plataforma")
     public void accedeCorrectamente() {
+        // TODO: validar que el usuario fue autenticado y redirigido (dashboard, token, etc.)
         System.out.println("Then: accede correctamente a la plataforma");
-        // TODO: verificar navegación/dashbord para persona jurídica
     }
+
+
 }
