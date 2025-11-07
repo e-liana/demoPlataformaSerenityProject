@@ -6,8 +6,8 @@ import io.cucumber.java.en.When;
 
 public class cancelarRegistroSteps {
 
-    @Given("el usuario está en la pantalla de bienvenida")
-    public void usuarioEnPantallaBienvenida() {
+    @Given("el usuario está en la pantalla de bienvenida y decide cancelar el registro")
+    public void usuarioEnPantallaBienvenidaCancelar() {
         System.out.println("entro al Given");//  pantalla de bienvenida en el proceso de registro
     } @When("hace clic en el botón Cancelar")
     public void clicEnBotonCancelar() {

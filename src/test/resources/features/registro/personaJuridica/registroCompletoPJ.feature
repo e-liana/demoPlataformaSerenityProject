@@ -4,7 +4,7 @@ Feature: # Enter feature name here
 
 
   Scenario: Registro completo para persona jurídica
-    Given el usuario ha seleccionado "Persona Jurídica"
-    And ha llenado el formulario correspondiente
-    When confirma sus datos y verifica identidad
-    Then el sistema crea la cuenta y muestra mensaje de éxito
+    Given el usuario ha seleccionado "Persona Jurídica" para registrarse como juridica
+    And ha llenado el formulario PJ correspondiente
+    When confirma sus datos PJ y verifica identidad
+    Then el sistema crea la cuenta PJ y muestra mensaje de éxito
