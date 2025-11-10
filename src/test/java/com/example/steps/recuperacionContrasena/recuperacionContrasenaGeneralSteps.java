@@ -8,12 +8,14 @@ import io.cucumber.java.en.Then;
 public class recuperacionContrasenaGeneralSteps {
 
     @Given("el usuario está en la pantalla de inicio de sesión para recuperar la contrasena")
-    public void usuarioEnPantallaInicioSesionRecuperarContrasen() {
+    public void usuarioEnPantallaInicioSesionRecuperarContrasena() {
         // Lógica para abrir la pantalla de inicio de sesión
     }
 
-    @When("hace clic en la opcion {string}")
-    public void haceClicEnTipoUsuario(String tipoUsuario) {
+
+    // separacion de tipo de persona para recuperacion de contrasena para que cucumber lo identifique como unico y evitar error recurrente
+    @When("hace clic en la opcion {string} para recuperar la contraseña")
+    public void haceClicEnTipoUsuarioRecuperacionContrasea(String tipoUsuario) {
         // Lógica para seleccionar el tipo de usuario
         if (tipoUsuario.equalsIgnoreCase("Persona Jurídica")) {
             seleccionarPersonaJuridica();
@@ -24,13 +26,13 @@ public class recuperacionContrasenaGeneralSteps {
         }
     }
 
-    @When("hace clic en el enlace {string}")
-    public void haceClicEnEnlace(String enlace) {
+    @When("hace clic en el enlace {string} para recuperar la contraseña")
+    public void haceClicEnEnlaceRecuperarContrasena(String enlace) {
         // Lógica para hacer clic en el enlace de recuperación
     }
 
     @Then("se muestra el flujo de recuperación de contraseña para {string}")
-    public void seMuestraFlujoRecuperacion(String tipoUsuario) {
+    public void seMuestraFlujoRecuperacionUsuario(String tipoUsuario) {
         // Validación de que se muestra el flujo correcto
         if (tipoUsuario.equalsIgnoreCase("Persona Jurídica")) {
             validarFlujoJuridico();

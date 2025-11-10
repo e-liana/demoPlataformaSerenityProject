@@ -2,11 +2,11 @@
 Feature: Inicio de sesión - Usuario genérico
 
   Scenario Outline: Usuario inicia sesión con credenciales válidas
-    Given el usuario está en la página de inicio de sesión para ingresar
+    Given el usuario está en la página de inicio de sesión
     And selecciona "<tipoUsuario>" para login
     When ingresa credenciales necesarias para login <credenciales>
     And hace clic en el boton "Ingresar" en la pantalla de inicio de sesión
-    Then accede correctamente a la plataforma desde Inicio de sesión
+    Then accede correctamente a la plataforma
 
     Examples:
       | tipoUsuario     | credenciales                                                                 |
