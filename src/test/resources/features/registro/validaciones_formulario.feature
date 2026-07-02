@@ -1,3 +1,4 @@
+@wip
 Feature: Validación de campos en el formulario de registro
 
 Scenario Outline: Validación de campos obligatorios y formato

@@ -6,6 +6,7 @@
     # Enter steps here
 # este caso no se esta usando
 
+@wip
 Feature: Registro de usuario unificado (Persona Natural y Persona Jurídica)
 
   Background:
@@ -17,7 +18,11 @@ Feature: Registro de usuario unificado (Persona Natural y Persona Jurídica)
     Then se muestra la pantalla de bienvenida con opciones de tipo de persona
     And se muestran las opciones "Persona Natural" y "Persona Jurídica"
 
-
+  # Salida temprana
+  Scenario: Cancelación del proceso de registro desde bienvenida
+    Given el usuario está en la pantalla de bienvenida
+    When hace clic en el botón "Cancelar"
+    Then el sistema lo redirige a la pantalla de inicio de sesión
 
   # Selección de tipo
   Scenario Outline: Selección de tipo de persona

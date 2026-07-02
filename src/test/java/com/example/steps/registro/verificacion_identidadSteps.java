@@ -52,11 +52,10 @@ public class verificacion_identidadSteps {
         // TODO: simular espera o avanzar el reloj en tests
     }
 
-    @When("hace clic en {string}")
-    public void haceClicEn(String opcion) {
-        System.out.println("When: hace clic en -> " + opcion);
-        // TODO: simular clic en la opción indicada (ej. "Reenviar código")
-    }
+    // NOTA: el step "hace clic en {string}" (p.ej. "Reenviar código") ya está
+    // definido en ComunSteps.haceClicEn(). Se eliminó de aquí porque tenía
+    // el mismo texto -> generaba ambigüedad. Cuando se cree el .feature de
+    // reenvío de OTP, usa directamente ese step común.
 
     @Then("el sistema envía un nuevo código al número registrado")
     public void sistemaEnviaUnNuevoCodigoAlNumeroRegistrado() {

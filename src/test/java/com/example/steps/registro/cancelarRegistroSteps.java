@@ -1,34 +1,22 @@
 package com.example.steps.registro;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 
+/**
+ * El Given "el usuario está en la pantalla de bienvenida" se movió a
+ * ComunSteps (estaba duplicado con seleccionTipoPersonaSteps).
+ *
+ * El When de clic en "Cancelar" también se eliminó de aquí: el .feature
+ * usa hace clic en el botón "Cancelar" (con comillas -> {string}), que ya
+ * lo resuelve BotonRegistroSteps.haceClicEnElBoton(String). La versión que
+ * había aquí (sin comillas, texto fijo "Cancelar") nunca hacía match con
+ * el .feature real y quedaba como código muerto.
+ */
 public class cancelarRegistroSteps {
 
-
-    @Given("el usuario está en la pantalla de Registro")
-    public void elUsuarioEstaEnLaPantallaDeInicioDeSesion() {
-        // Lógica para navegar a la pantalla de inicio de sesion desde la pagina de registro y su cancelacion
-        System.out.println("entro al Given, usuario en pagina de registro");
+    @Then("el sistema lo redirige a la pantalla de inicio de sesión")
+    public void redireccionInicioSesion() {
+        System.out.println("Then: el sistema lo redirige a la pantalla de inicio de sesión");
+        // TODO: assert real (URL/elemento visible del login)
     }
-
-    @Given("el usuario está en la pantalla de bienvenida y decide cancelar el registro")
-    public void elUsuarioEstaEnLaPantallaDeBienvenidaYDecideCancelar() {
-        // Lógica para simular que el usuario está en la pantalla de bienvenida
-        System.out.println("entro al Given");//  pantalla de bienvenida en el proceso de registro
-    }
-
-    @When("hace clic en el botón {string} desde la pantalla de bienvenida")
-    public void haceClicEnElBotonCancelarDesdeLaPantallaDeBienvenida(String boton) {
-        // Lógica para hacer clic en el botón especificado (por ejemplo, "Cancelar")
-        System.out.println("entro al When");//
-    }
-
-    @Then("el sistema cancela el registro y lo redirige a la pantalla de inicio de sesión")
-    public void elSistemaCancelaElRegistroYRedirige() {
-        // Lógica para verificar que el usuario fue redirigido correctamente
-        System.out.println("entro al Then");// regresa a pantalla de inicio/ inicio sesin independientemente del tipo de persona
-    }
-
 }
