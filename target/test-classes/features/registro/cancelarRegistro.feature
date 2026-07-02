@@ -1,9 +1,9 @@
 # Created by LisethElianaOsorioRe at 6/11/2025
 Feature: Cancelar registro
-  # Enter feature name here
-  # Enter feature description here
+    Background:
+        Given el usuario está en la pantalla de Registro
 
-  Scenario: Cancelación del proceso de registro
-    Given el usuario está en la pantalla de bienvenida
-    When hace clic en el botón "Cancelar"
-    Then el sistema lo redirige a la pantalla de inicio de sesión
+  Scenario: Cancelación del proceso de registro desde bienvenida
+    Given el usuario está en la pantalla de bienvenida y decide cancelar el registro
+    When hace clic en el botón "Cancelar" desde la pantalla de bienvenida
+    Then el sistema cancela el registro y lo redirige a la pantalla de inicio de sesión
