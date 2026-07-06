@@ -18,12 +18,9 @@ public class LoginPage extends PageObject {
     // Campo NIT
     private static final By CAMPO_NIT = By.id("userNameNit");
 
-    // Selectores dinámicos por texto
+    // Selector genérico por texto
     private static final String XPATH_POR_TEXTO =
             "//*[normalize-space(text())='%s']";
-
-    private static final String XPATH_BOTON_POR_TEXTO =
-            "//button[normalize-space(text())='%s']";
 
     /**
      * Abre la aplicación.
@@ -52,6 +49,7 @@ public class LoginPage extends PageObject {
      * Persona Natural.
      */
     public void ingresarCorreoYContrasena(String correo, String contrasena) {
+
         $(CAMPO_CORREO)
                 .waitUntilVisible()
                 .clear();
@@ -85,8 +83,117 @@ public class LoginPage extends PageObject {
     }
 
     /**
-     * Click en cualquier botón por texto.
+     * Hace clic en cualquier elemento visible por texto.
+     * Funciona para botones, enlaces (<a>), spans, etc.
      */
+    public void clicEnBoton(String texto) {
+
+        String xpath = String.format(XPATH_POR_TEXTO, texto);
+
+        System.out.println("Texto recibido: " + texto);
+        System.out.println("XPath utilizado: " + xpath);
+
+        $(By.xpath(xpath))
+                .waitUntilClickable()
+                .click();
+    }
+}
+
+
+/* VERSION 2
+
+package com.example.pages;
+
+
+import net.serenitybdd.core.pages.PageObject;
+import org.openqa.selenium.By;
+
+/**
+ * Page Object de la pantalla de inicio de sesión.
+ * Sirve tanto para Persona Natural como Persona Jurídica.
+ */
+/*
+public class LoginPage extends PageObject {
+
+
+    // Campo correo
+    private static final By CAMPO_CORREO = By.id("txtEmail");
+
+    // Campo contraseña
+    private static final By CAMPO_CONTRASENA = By.id("txtPassword");
+
+    // Campo NIT
+    private static final By CAMPO_NIT = By.id("userNameNit");
+
+    // Selectores dinámicos por texto
+    private static final String XPATH_POR_TEXTO =
+            "//*[normalize-space(text())='%s']";
+
+    private static final String XPATH_BOTON_POR_TEXTO =
+            "//button[normalize-space(text())='%s']";
+
+    /**
+     * Abre la aplicación.
+
+    public void abrir() {
+        getDriver().get("https://pruebas.fisapay.com.co/");
+    }
+
+    /**
+     * Verifica que la página esté abierta.
+
+    public boolean estaAbierta() {
+        return getDriver().getCurrentUrl().contains("fisapay.com.co");
+    }
+
+    /**
+     * Selecciona Persona Natural o Persona Jurídica.
+
+    public void seleccionarTipoPersona(String tipoPersona) {
+        $(By.xpath(String.format(XPATH_POR_TEXTO, tipoPersona)))
+                .waitUntilClickable()
+                .click();
+    }
+
+    /**
+     * Persona Natural.
+
+    public void ingresarCorreoYContrasena(String correo, String contrasena) {
+        $(CAMPO_CORREO)
+                .waitUntilVisible()
+                .clear();
+
+        $(CAMPO_CORREO)
+                .type(correo);
+
+        $(CAMPO_CONTRASENA)
+                .waitUntilVisible()
+                .clear();
+
+        $(CAMPO_CONTRASENA)
+                .type(contrasena);
+    }
+/*
+    /**
+     * Persona Jurídica.
+
+    public void ingresarNitCorreoYContrasena(String nit,
+                                             String correo,
+                                             String contrasena) {
+
+        $(CAMPO_NIT)
+                .waitUntilVisible()
+                .clear();
+
+        $(CAMPO_NIT)
+                .type(nit);
+
+        ingresarCorreoYContrasena(correo, contrasena);
+    }
+
+    /**
+     * Click en cualquier botón por texto.
+
     public void clicEnBoton(String textoBoton) {
         $(By.xpath(String.format(
                 XPATH_BOTON_POR_TEXTO,
@@ -95,7 +202,11 @@ public class LoginPage extends PageObject {
                 .click();
     }
 }
+/*
 
+ */
+
+//VERSION 1
 /*
 
 package com.example.pages;

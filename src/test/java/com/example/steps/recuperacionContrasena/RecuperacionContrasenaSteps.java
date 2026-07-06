@@ -20,6 +20,7 @@ public class RecuperacionContrasenaSteps {
     public void el_usuario_esta_en_la_pantalla_de_inicio_de_sesion_para_recuperar_la_contrasena() {
     }
 
+
     @When("hace clic en la opcion {string} para recuperar la contraseña")
     public void hace_clic_en_la_opcion_para_recuperar_la_contrasena(String opcion) {
     }

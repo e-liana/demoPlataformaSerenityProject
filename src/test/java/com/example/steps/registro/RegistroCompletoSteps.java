@@ -9,18 +9,7 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Steps;
 import org.junit.Assert;
 
-/**
- * Reemplaza a registroCompletoPJSteps.java y registroCompletoPNSteps.java
- * (copia exacta una de otra -> 5 steps ambiguos).
- *
- * Bug adicional encontrado y corregido: registroCompletoPJ.feature usaba un
- * texto distinto al de su propia clase de steps ("ha llenado el formulario
- * correspondiente" y "confirma sus datos y verifica identidad" en vez de
- * "ha llenado el formulario paso 1 de 2 correctamente" / "confirma sus
- * datos en el pop-up" + "verifica su identidad..."), es decir, el
- * escenario de Persona Jurídica tenía TODOS sus steps como "undefined".
- * Se alineó el .feature de PJ con el mismo texto que PN.
- */
+
 public class RegistroCompletoSteps {
 
     @Steps

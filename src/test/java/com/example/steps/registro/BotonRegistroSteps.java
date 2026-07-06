@@ -8,10 +8,7 @@ import net.serenitybdd.annotations.Steps;
 import org.junit.Assert;
 
 /**
- * Reemplaza a botonRegistroJSteps.java y botonRegistroNSteps.java, que eran
- * una copia byte a byte una de la otra (mismos 4 steps, mismo texto) ->
- * 4 AmbiguousStepDefinitionsException garantizadas si ambas clases están
- * en el glue path (com.example.steps.*), como es el caso.
+
  *
  * El botón "Regístrate"/"Cancelar" se comporta igual sin importar si luego
  * el usuario elige Persona Natural o Jurídica, así que un solo set de

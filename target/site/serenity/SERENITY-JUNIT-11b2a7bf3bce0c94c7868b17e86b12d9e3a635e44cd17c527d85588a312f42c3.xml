@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Cancelar registro" skipped="0" tests="1" time="16.44" timestamp="2026-07-06 11:59:32"><testcase name="Cancelación del proceso de registro"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-com.example.pages.RegistroPage.clicEnBoton(RegistroPage.java:36)&#13;
-com.example.steps.registro.BotonRegistroSteps.haceClicEnElBoton(BotonRegistroSteps.java:30)&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Cancelar registro" skipped="0" tests="1" time="16.24" timestamp="2026-07-06 03:29:04"><testcase name="Cancelación del proceso de registro"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.example.pages.RegistroPage.clicEnBoton(RegistroPage.java:69)&#13;
+com.example.steps.registro.BotonRegistroSteps.haceClicEnElBoton(BotonRegistroSteps.java:27)&#13;
 </system-err></testcase></testsuite>
