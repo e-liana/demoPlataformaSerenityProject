@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Registro completo de usuario en persona jurídica" skipped="0" tests="1" time="0.05" timestamp="2026-07-06 12:00:10"><testcase name="Registro completo para persona jurídica"><failure message="No se muestra el pop-up de confirmación de datos" type="java.lang.AssertionError">No se muestra el pop-up de confirmación de datos</failure><system-err>No se muestra el pop-up de confirmación de datos&#13;
+com.example.steps.registro.RegistroCompletoSteps.confirmaDatosPopup(RegistroCompletoSteps.java:42)&#13;
+✽.confirma sus datos en el pop-up(file:///C:/Users/LisethElianaOsorioRe/IdeaProjects/Fisapay/demoPlataformaSerenityProject/src/test/resources/features/registro/personaJuridica/registroCompletoPJ.feature:7)&#13;
+</system-err></testcase></testsuite>

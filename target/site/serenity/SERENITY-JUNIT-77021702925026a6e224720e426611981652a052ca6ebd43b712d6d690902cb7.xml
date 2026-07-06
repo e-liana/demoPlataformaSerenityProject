@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Verificación de identidad - Envío y reenvío de código OTP" skipped="0" tests="2" time="5.07" timestamp="2026-07-06 12:01:06"><testcase name="El sistema envía el código de verificación al número registrado"/><testcase name="Reenvío de código OTP luego de esperar el tiempo mínimo"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.example.pages.LoginPage.clicEnBoton(LoginPage.java:94)&#13;
+com.example.steps.comunes.ComunSteps.haceClicEn(ComunSteps.java:61)&#13;
+</system-err></testcase></testsuite>

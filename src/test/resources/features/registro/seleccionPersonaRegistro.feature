@@ -14,6 +14,6 @@ Feature: Seleccion de tipo de persona para Registrarse# Enter feature name here
 
 
     Examples:
-      | tipoPersona     |
-      | Persona Natural |
-#  | Persona Jurídica |
+      | tipoPersona      |
+      | Persona natural  |
+      | Persona jurídica |

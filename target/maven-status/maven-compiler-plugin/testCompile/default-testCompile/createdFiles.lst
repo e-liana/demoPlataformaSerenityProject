@@ -1,0 +1,14 @@
+com\example\steps\registro\cancelarRegistroSteps.class
+com\example\pages\LoginPage.class
+com\example\steps\registro\BotonRegistroSteps.class
+com\example\steps\inicioSesion\LoginSteps.class
+com\example\steps\comunes\ComunSteps.class
+com\example\steps\registro\validaciones_formularioSteps.class
+com\example\pages\RegistroPage.class
+com\example\steps\recuperacionContrasena\RecuperacionContrasenaSteps.class
+com\example\steps\registro\verificacion_identidadSteps.class
+com\example\steps\registro\seleccionPersonaRegistroSteps.class
+com\example\steps\inicioSesion\ingresoDavivienda\loginDaviviendaSteps.class
+com\example\steps\registro\seleccionTipoPersonaSteps.class
+com\example\runners\TestRunner.class
+com\example\steps\registro\RegistroCompletoSteps.class

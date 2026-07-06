@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="Recuperación de contraseña para persona natural" skipped="0" tests="1" time="14.89" timestamp="2026-07-06 11:59:17"><testcase name="Usuario persona Natural olvida su contraseña"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+com.example.pages.LoginPage.clicEnBoton(LoginPage.java:94)&#13;
+com.example.steps.comunes.ComunSteps.haceClicEn(ComunSteps.java:61)&#13;
+</system-err></testcase></testsuite>

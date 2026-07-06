@@ -8,6 +8,6 @@ Feature: Recuperación de contraseña - Usuario genérico
     Then se muestra el flujo de recuperación de contraseña para "<tipoUsuario>"
 
     Examples:
-      | tipoUsuario |
-      | Persona Natural   |
-#| Persona Jurídica  |
+      | tipoUsuario      |
+      | Persona natural  |
+      | Persona jurídica |

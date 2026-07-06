@@ -1,0 +1,14 @@
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\pages\LoginPage.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\pages\RegistroPage.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\runners\TestRunner.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\comunes\ComunSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\inicioSesion\ingresoDavivienda\loginDaviviendaSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\inicioSesion\LoginSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\recuperacionContrasena\RecuperacionContrasenaSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\registro\BotonRegistroSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\registro\cancelarRegistroSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\registro\RegistroCompletoSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\registro\seleccionPersonaRegistroSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\registro\seleccionTipoPersonaSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\registro\validaciones_formularioSteps.java
+C:\Users\LisethElianaOsorioRe\IdeaProjects\Fisapay\demoPlataformaSerenityProject\src\test\java\com\example\steps\registro\verificacion_identidadSteps.java

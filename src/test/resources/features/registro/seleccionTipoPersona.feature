@@ -8,5 +8,6 @@ Feature: Selección de tipo de persona en el registro
 
     Examples:
       | tipoPersona      |
-      | Persona Natural  |
-      | Persona Jurídica |
+      | Persona natural  |
+      | Persona jurídica |
+      |                  |

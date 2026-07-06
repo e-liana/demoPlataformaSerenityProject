@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Validación de contraseña segura" skipped="0" tests="2" time="0.01" timestamp="2026-07-06 12:01:06"><testcase name="Usuario ingresa contraseña que cumple con los requisitos"/><testcase name="Usuario ingresa contraseña sin carácter especial"/></testsuite>

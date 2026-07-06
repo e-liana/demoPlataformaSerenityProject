@@ -33,8 +33,8 @@ Feature: Registro de usuario unificado (Persona Natural y Persona Jurídica)
 
     Examples:
       | tipoPersona      |
-      | Persona Natural  |
-      | Persona Jurídica |
+      | Persona natural  |
+      | Persona jurídica |
 
   # Paso 1: Datos comunes de cuenta
   Scenario: Completar datos de cuenta válidos
